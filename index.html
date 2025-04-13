@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDoDashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-switcher">
+    <label class="switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="dashboard">
+    <div class="date-card">
+      <h2 id="day">Saturday</h2>
+      <div class="circle" id="date">12</div>
+      <p id="month">April</p>
+    </div>
+
+    <div class="progress-bar">
+      <h3>Progression</h3>
+      <div class="bar"><div class="fill" id="progress-fill"></div></div>
+    </div>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Write your task here..." />
+      <button onclick="addTask()">+</button>
+    </div>
+
+    <div class="task-list">
+      <ul id="taskList"></ul>
+    </div>
+
+    <button class="finish-btn" onclick="finishDay()">Finish Day</button>
+  </div>
+
+  <div id="tomorrowSection" style="display: none;">
+    <h4>Tomorrow’s Plan</h4>
+    <div class="task-input tomorrow">
+      <input id="tomorrowInput" type="text" placeholder="Add task for tomorrow">
+      <button onclick="addTomorrowTask()">+</button>
+    </div>
+    <div class="task-list">
+      <ul id="tomorrowList"></ul>
+    </div>
+  </div>
+
+  <div id="historySection">
+    <h4>Task History</h4>
+    <ul id="historyList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
