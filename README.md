@@ -56,3 +56,5 @@ Mobile-friendly with fluid sizing and flexible layouts.
 
 #output:
 
+![Image](https://github.com/user-attachments/assets/4ce9975e-4070-4891-b9ce-a8109cba40d0)
+![Image](https://github.com/user-attachments/assets/453ea7b9-da1f-4a84-b336-5651be69817c)
